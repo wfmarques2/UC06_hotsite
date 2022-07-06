@@ -1,0 +1,181 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Iniciativa Saúde da Cidade";
+}
+
+<!-- Descrição-->
+<div class="col-6">
+    <h1>Iniciativa Saúde da Cidade</h1>
+    <p>
+        As facilidades e avanços proporcionados pela vida moderna trazem muitas vezes, como Indesejada contrapartida, alguns efeitos colaterais. Quem habita em centros urbanos é obrigado a Conviver com uma estressante rotina, marcada por congestionamentos, excesso de compromisso, falta De tempo para o lazer e para o convívio com familares e amigos.
+Para fazer frente a essa realidade, é preciso reagir, tomar uma atitude para repor as energias, Restabelecer o equilíbrio físico e emocional; enfim, colocar a qualidade de vida em primeiro lugar.
+A prática de atividade física é um meio eficaz para fortalecer o Organismo e manter condições de vida saudáveis, desde a prevenção de Doenças cardiovasculares, combate ao estresse e manter boas condições Do sistema musculoesquelético. Pessoas com excesso de peso sofrem dor Nas articulações, sobrecarregam vasos e com o tempo apresentam Dificuldade para se locomover e Fazer movimentos básicos.
+Portanto, mexa-se
+    </p>
+</div>
+
+<!-- Imagem Maior-->
+<div class="col-6" style='width: 500px; margin-top: 25px; display: flex; justify-content: space-between;'>
+    <img src="https://www.lizamayliza.com/storage/cache/images/004/118/Venice-Beach,xlarge.1480369578.jpg" alt="academia"
+        style="width: 600px; height: 380px;">
+</div>
+
+<div class="col-6">
+    <h2>Entre em contato!</h2>
+    <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+    
+    <form action="/Home/Cadastrar" method="POST">
+                <div>
+					<input placeholder="*Nome" type="text" name="Nome" required />
+				</div><br>
+        <div>
+          <input placeholder="*Email" type="text" name="Email" required />
+				</div><br>
+        <div>
+            <textarea placeholder="Mensagem (não obrigatório)" name="Mensagem"></textarea>
+				</div><br>
+        <div>
+            <input type="submit" value="Enviar" class="btn btn-success"/>
+        </div>
+    </form>
+    
+</div>
+
+<!-- Imagens e Referências-->
+<div class="col-6" style='width: 500px; margin-top: 25px; display: flex; justify-content: space-between;'>
+    <a data-toggle="modal" href="#ModalAgenda" style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://spnegocios.com/wp-content/themes/spnegocios/assets/img/default-events.png?x12705&t=1598926676" alt="calendario"
+            style="width: 100px; height: 100px;"> Agenda de Eventos</a>
+    <a data-toggle="modal" href="#ModalDicas" style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://flyclipart.com/thumbs/fitness-lifestyle-clipart-logo-for-healthy-lifestyle-1251037.png"
+            alt="saudavel" style="width: 100px; height: 100px;"> Dicas de Vida Saudável</a>
+    <a data-toggle="modal" href="#ModalApoiadores" style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://i0.wp.com/jornalaw.com.br/wp-content/uploads/2016/07/patrocinadores.gif?fit=389%2C353&ssl=1" alt="apoiadores"
+            style="width: 100px; height: 100px;"> Apoiadores</a>
+</div>
+
+
+
+<!-- Modal Dicas -->
+<div class="modal fade" id="ModalDicas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalDicas">Dicas de Vida Saudável</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>De acordo com informações do Ministério da Saúde, manter hábitos saudáveis diariamente é a melhor forma de prevenir doenças, você sabia? Manter a saúde em dia está diretamente ligada à sensação de felicidade e bem-estar. . 
+Veja abaixo cinco dicas importantes para você adotar no dia a dia: 
+                </p><br>
+                <p>
+                    1. Durma de 6 a 8 horas por dia
+                </p>
+                <p>
+                    Dormir de 6 a 8 horas por dia é muito importante para que o corpo descanse e reponha as energias necessárias. É nesse período também que são liberados hormônios, como o cortisol e o GH. O cortisol é responsável pelo combate de algumas complicações, como as alergias, e o GH, responsável pelo crescimento e multiplicação celular
+                </p><br>
+                <p>
+                    2. Alimente-se bem
+                </p>
+                <p>
+                    Comer de 3 em 3 horas em pequenas quantidades, beber no mínimo 2 litros de água e fazer escolhas inteligentes no mercado são formas de manter uma dieta equilibrada diariamente. 
+Prefira sempre pelos alimentos naturais, aqueles que contêm maior quantidade de vitaminas e fibras, como frutas, grãos, verduras e legumes. Alimentos com gorduras boas, como o azeite, também fazem bem para a saúde. 
+
+                </p><br>
+                <p>
+                    3. Evite refrigerantes e bebidas alcoólicas
+                </p>
+                <p>
+                    O consumo de refrigerantes não é indicado, pois eles contêm uma grande quantidade de açúcar em sua composição, o que é muito perigoso para a saúde do coração. 
+Já o consumo de bebidas alcoólicas também deve ser evitado, só que em grandes quantidades. Para quem não sabe, beber cerca de 250 ml de vinho por noite faz bem para a saúde. Mas não abuse. Seu consumo exagerado pode provocar dependência e o surgimento de doenças graves, como a cirrose.
+
+                </p><br>
+                <p>4. Pratique atividades físicas</p>
+                <p>Fazer academia ou praticar algum esporte de 2 a 3 vezes por semana é muito importante para controlar o peso e evitar doenças cardiovasculares. Atividade física também ajuda na saúde emocional do ser humano, elevando o humor e afastando a ansiedade. </p><br>
+                <p>5. Realize check-ups periodicamente</p>
+                <p>Os check-ups são importantes para diagnosticar doenças silenciosas precocemente. O dr.consulta oferece vários tipos de exames de rotina para você e sua família manterem a saúde em dia. 
+Agora que você já conhece todas as dicas, basta colocá-las em prática e ter uma vida mais saudável e feliz.
+</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Agenda -->
+<div class="modal fade" id="ModalAgenda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalAgenda">Agenda</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>29/05/2022 - Eduardo Correa Classic.
+A competição, que homenageia em seu nome o fisiculturista Eduardo Correa, acontece em Camboriú (Santa Catarina) no Maria´s Shows e Eventos.
+As categorias serão  Bodybuilding, Classic Physique, Men’s Physique, Bikini, Wellness, Figure, Women’s Physique e Atletas Especiais.
+Estarão presentes os nomes mais expressivos do universo bodybuilder do país, além de representantes de mais seis países: Argentina, Paraguai, Uruguai, Peru, França e Nigéria.
+
+                </p>
+
+                <p>10/07/2022 - A Maratona de Revezamento KTO é uma corrida Diurna. Será realizada em Porto Alegre, no Estado do Rio Grande do Sul, com participação de ambos os sexos. Terá percursos de 42km (Dupla, Quarteto e Octeto).
+ Serão premiados com troféus e brindes os cinco primeiros colocados nas duplas (masculina, feminina e mista) quartetos ( masculino ,feminino e mista ) e Octeto( masculino, feminino e misto), não havendo premiação em dinheiro, nem premiação por faixa etária. 
+
+                </p>
+
+
+                <p>28/07/2022 - Para as pessoas da terceira idade, o fim de semana oferece uma série de eventos voltados para quem busca ter um estilo de vida mais saudável. Entre esta sexta-feira (28/7) e o próximo domingo (30/7), acontece a 2; edição da Feira da Longevidade, na área externa do Brasília Shopping. Profissionais e prestadores de serviço que atendem especificamente às pessoas da terceira idade estarão presente para tirar dúvidas.
+                </p>
+
+
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Apoiadores -->
+<div class="modal fade" id="ModalApoiadores" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalApoiadores">Apoiadores</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://cf.shopee.com.br/file/b990c17d5dfce5943a0aec3d76568579" alt="calendario"
+            style="width: 120px; height: 120px;"> Integral Medica</a><br>
+
+                <a style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://static.jackcenter.com.br/upload/brand/landerlan.jpg" alt="calendario"
+            style="width: 120px; height: 120px;"> Landerlan</a><br>
+
+                <a style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://yt3.ggpht.com/ytc/AKedOLRtJcBCy2ok9TQyIdz1Kwx3w9i48iDfz3x_9G5q8g=s900-c-k-c0x00ffffff-no-rj" alt="calendario"
+            style="width: 120px; height: 120px;"> Max Titanium</a><br>
+
+                <a style="display: flex; flex-direction: column; align-items: center; font-size: 15px"><img
+            src="https://www.suplementoszone.com.br/image/data/Imagem-Produtos/New-Millen/logo-new_millen.png" alt="calendario"
+            style="width: 120px; height: 120px;"> New Millen</a><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
